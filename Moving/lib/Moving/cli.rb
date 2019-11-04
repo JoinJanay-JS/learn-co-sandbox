@@ -50,4 +50,4 @@ def vehicle_selection
   @@all
   end
 
-
+end 
