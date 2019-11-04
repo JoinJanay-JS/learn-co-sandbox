@@ -7,6 +7,14 @@ class Moving::CLI
     puts "Hello, find your vehicle here!"
     recommend_vehicle
   end 
+  
+  def vehicles 
+    @vehicles = vehicles
+  end 
+  
+  def rooms 
+    @rooms = rooms
+  end 
 
 def vehicle_selection
   puts "Please select '#{vehicle}'"
