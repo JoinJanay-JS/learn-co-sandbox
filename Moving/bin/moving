@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require_relative '../Moving/lib/cli.rb'
+require 'HTTParty'
+require 'Nokogiri'
+require 'Open_uri'
+
+Moving::CLI.new.intro
