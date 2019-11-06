@@ -1,3 +1,5 @@
+require_relative 'scraper.rb'
+
 class Moving::CLI 
   attr_accessor :vehicles, :rooms
   @@all = []
