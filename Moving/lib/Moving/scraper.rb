@@ -1,5 +1,4 @@
-require 'open-uri'
-require 'nokogiri'
+
 #require 'pry'
 
 class Scraper 
@@ -28,7 +27,7 @@ vehicles << rooms
 end 
 vehicles 
 end
-
+end
 
 
 #@@all = []
@@ -43,4 +42,3 @@ end
 #end 
 #def vehicles
 #end 
-end 

@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative '../Moving/lib/cli.rb'
+require './lib/environment'
 require 'HTTParty'
 require 'Nokogiri'
 require 'Open_uri'

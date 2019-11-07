@@ -1,5 +1,3 @@
-require_relative 'scraper.rb'
-
 class Moving::CLI 
   attr_accessor :vehicles, :rooms
   @@all = []
@@ -33,6 +31,8 @@ def vehicle_selection
             end 
           end 
         end
+        
+      #look into case statements instead of if/then 
     
  
 
@@ -52,12 +52,10 @@ def vehicle_selection
     vehicle_select.each {|v, r| self.send(("#{r}="),v)}
     @@all << self 
     end 
-  end
-
-
+  
 
   def self.all
   @@all
   end
 
-end 
+
