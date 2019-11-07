@@ -2,6 +2,15 @@ class Moving::CLI
   attr_accessor :vehicles, :rooms
   @@all = []
   
+   def initialize()
+   # vehicle_select.each {|v, r| self.send(("#{r}="),v)}
+    @@all << self 
+    end 
+  
+
+  def self.all
+  @@all
+  end
   
   def intro 
     puts "Hello, find your vehicle here!"
@@ -37,7 +46,7 @@ def vehicle_selection
  
 
    def recommend_vehicle
-    x = "#{room}" 
+    x = "#{rooms}" 
     if x < 1
     puts vehicle_selection
     elsif x == 2 
@@ -48,14 +57,6 @@ def vehicle_selection
   end
 
 
-  def initialize(vehicle_select)
-    vehicle_select.each {|v, r| self.send(("#{r}="),v)}
-    @@all << self 
-    end 
   
-
-  def self.all
-  @@all
-  end
 
 

@@ -9,19 +9,19 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Janay Bailey'"]
   spec.email         = ["'tjanay87@gmail.com'"]
 
-  spec.summary       = Gem to scrape Penske Website for a recommended truck 
+  spec.summary       = "Gem to scrape Penske Website for a recommended truck"
 
-  spec.homepage      = "www.joinjanay.com/Gem/Moving"
+  spec.homepage      = "https://www.joinjanay.com/Gem/Moving"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata["allowed_push_host"] = "https://www.joinjanay.com/Gem/Moving'"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "www.joinjanay.com/Gem/Moving"
-    spec.metadata["changelog_uri"] = "www.joinjanay.com/Gem/Moving"
+    spec.metadata["source_code_uri"] = "https://www.joinjanay.com/Gem/Moving"
+    spec.metadata["changelog_uri"] = "https://www.joinjanay.com/Gem/Moving"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -39,6 +39,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "pry"
-  spec.dependency "nokogiri"
+  spec.add_dependency "nokogiri"
   
 end

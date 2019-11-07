@@ -8,7 +8,6 @@ module Moving
 end
 
 require 'pry'
-require 'HTTParty'
-require 'Nokogiri'
-require 'Open_uri'
+require 'nokogiri'
+require 'open-uri'
 
