@@ -19,9 +19,9 @@ class Moving::CLI
     vehicle_selection
   end 
   
- # def vehicles 
-  # @vehicles = vehicles
-  # end 
+  def vehicles 
+   @vehicles = vehicles
+  end 
   
   #def rooms 
    # @rooms = rooms
