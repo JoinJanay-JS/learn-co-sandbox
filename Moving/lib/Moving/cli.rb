@@ -1,3 +1,5 @@
+require './lib/environment'
+
 class Moving::CLI 
   attr_accessor :vehicles, :rooms
   @@all = []
@@ -14,49 +16,39 @@ class Moving::CLI
   
   def intro 
     puts "Hello, find your vehicle here!"
-    recommend_vehicle
+    vehicle_selection
   end 
   
   def vehicles 
     @vehicles = vehicles
   end 
   
-  def rooms 
-    @rooms = rooms
-  end 
+  #def rooms 
+   # @rooms = rooms
+  #end 
 
 def vehicle_selection
-  puts "Please select '#{vehicle}'"
-    if vehicle == 1
-    then vehicle = 'Cargo Van'
-      elsif vehicle == 2
-      then vehicle = '12 Foot Truck'
-        elsif vehicle == 3
-        then vehicle = '16 Foot Truck'
-          elsif vehicle = 4 || 5
-          then vehicle = '22 Foot Truck'
-            elsif vehicle = 6 || 7
-            then vehicle = '26 Foot Truck'
-            end 
-          end 
-        end
+  case rooms
+    when vehicles = 1 then "Cargo Van"
+    when vehicle = 1..2 then "12 Foot Truck"
+    when vehicle = 2..3 then "16 Foot Truck"
+    when vehicle = 3..5 then "22 Foot Truck"
+    when vehicle = 5..7 then "26 Foot Truck"
+    end
+  end
+end 
+
         
       #look into case statements instead of if/then 
     
- 
 
-   def recommend_vehicle
-    x = "#{rooms}" 
-    if x < 1
-    puts vehicle_selection
-    elsif x == 2 
-    puts vehicle_selection 
-    elsif x == 3
-    puts vehicle_selection
-  end 
-  end
-
-
-  
-
-
+   #def recommend_vehicle
+   #x = "#{rooms}" 
+    #if x < 1
+    #puts vehicle_selection
+    #elsif x == 2 
+    #puts vehicle_selection 
+    #elsif x == 3
+    #puts vehicle_selection
+   #vehicle_selection.each {|v, r| self.send(("#{r}="),v)}
+  #  end
