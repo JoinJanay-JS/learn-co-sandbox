@@ -28,13 +28,16 @@ class Moving::CLI
   #end 
 
 def vehicle_selection
+  puts "How many rooms do you have?"
+  rooms = gets
   case rooms
     when vehicles = 1 then "Cargo Van"
-    when vehicle = 1..2 then "12 Foot Truck"
-    when vehicle = 2..3 then "16 Foot Truck"
-    when vehicle = 3..5 then "22 Foot Truck"
-    when vehicle = 5..7 then "26 Foot Truck"
+    when vehicles = 1..2 then "12 Foot Truck"
+    when vehicles = 2..3 then "16 Foot Truck"
+    when vehicles = 3..5 then "22 Foot Truck"
+    when vehicles = 5..7 then "26 Foot Truck"
     end
+    puts "You should select (#{vehicles}) based on " + rooms +"rooms."
   end
 end 
 
