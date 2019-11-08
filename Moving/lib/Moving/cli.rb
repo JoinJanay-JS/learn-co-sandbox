@@ -19,31 +19,37 @@ class Moving::CLI
     vehicle_selection
   end 
   
-  def vehicles 
-    @vehicles = vehicles
-  end 
+ # def vehicles 
+  # @vehicles = vehicles
+  # end 
   
   #def rooms 
    # @rooms = rooms
   #end 
 
-def vehicle_selection
+def vehicle_selection()
   puts "How many rooms do you have?"
-  rooms = gets
+  rooms = gets.to_i
+  vehicles = nil
   case rooms
-    when vehicles = 1 then "Cargo Van"
-    when vehicles = 1..2 then "12 Foot Truck"
-    when vehicles = 2..3 then "16 Foot Truck"
-    when vehicles = 3..5 then "22 Foot Truck"
-    when vehicles = 5..7 then "26 Foot Truck"
+    when 1 
+      vehicles = "Cargo Van"
+    when 1..2   
+      vehicles = "12 Foot Truck"
+    when 2..3  
+      vehicles = "16 Foot Truck" 
+    when 3..5  
+      vehicles = "22 Foot Truck"
+    when 5..7 
+      vehicles = "26 Foot Truck"
     end
-    puts "You should select (#{vehicles}) based on " + rooms +"rooms."
+    puts "You should select (#{vehicles}) based on (#{rooms}) rooms."
   end
 end 
 
         
       #look into case statements instead of if/then 
-    
+    #resaving
 
    #def recommend_vehicle
    #x = "#{rooms}" 
