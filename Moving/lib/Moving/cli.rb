@@ -49,15 +49,8 @@ end
 
         
       #look into case statements instead of if/then 
-    #resaving
 
-   #def recommend_vehicle
-   #x = "#{rooms}" 
-    #if x < 1
-    #puts vehicle_selection
-    #elsif x == 2 
-    #puts vehicle_selection 
-    #elsif x == 3
-    #puts vehicle_selection
-   #vehicle_selection.each {|v, r| self.send(("#{r}="),v)}
-  #  end
+
+  #def vehicle_info
+   #grab gas info and cargo size
+  #end

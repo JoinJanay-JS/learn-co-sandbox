@@ -7,7 +7,7 @@ module Moving
   # Your code goes here...
 end
 
-require 'pry'
+#require 'pry'
 require 'nokogiri'
 require 'open-uri'
 
