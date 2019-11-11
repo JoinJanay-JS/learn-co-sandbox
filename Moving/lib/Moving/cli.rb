@@ -1,19 +1,7 @@
 require './lib/environment'
 
 class Moving::CLI 
-  attr_accessor :vehicles, :rooms, :gas
-  @@all = []
-  
-   def initialize()
-  
-    @@all << self 
-    end 
-  
 
-  def self.all
-  @@all
-  end
-  
   def intro 
     puts "Hello, find your vehicle here!"
     vehicle_selection
@@ -71,6 +59,7 @@ fuel = nil
     end
   puts "You should expect to use #{fuel}."
 end 
+
 
 
  
