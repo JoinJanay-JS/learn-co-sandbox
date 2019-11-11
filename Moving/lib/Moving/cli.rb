@@ -1,11 +1,11 @@
 require './lib/environment'
 
 class Moving::CLI 
-  attr_accessor :vehicles, :rooms
+  attr_accessor :vehicles, :rooms, :gas
   @@all = []
   
    def initialize()
-   # vehicle_select.each {|v, r| self.send(("#{r}="),v)}
+  
     @@all << self 
     end 
   
@@ -17,14 +17,22 @@ class Moving::CLI
   def intro 
     puts "Hello, find your vehicle here!"
     vehicle_selection
+    fuel_tank
   end 
   
   def vehicles 
    @vehicles = vehicles
   end 
   
-  #def rooms 
-   # @rooms = rooms
+  
+  def gas=(gas)
+  @gas = gas
+end
+def gas
+  @gas 
+end
+  #def gas 
+  #  @gas = gas
   #end 
 
 def vehicle_selection()
@@ -43,14 +51,26 @@ def vehicle_selection()
     when 5..7 
       vehicles = "26 Foot Truck"
     end
-    puts "You should select (#{vehicles}) based on (#{rooms}) rooms."
+    puts "You should select #{vehicles} based on #{rooms} room(s)."
   end
 end 
 
-        
-      #look into case statements instead of if/then 
+# vehicle_select.each {|v, r| self.send(("#{r}="),v)}
+
+def fuel_tank()
+puts "How much gas will you use?"
+gas = gets
+fuel = nil 
+  case gas 
+    when 'Cargo Van'
+     then fuel == "Up to 31 gallons at 12 mph!"
+    when '12 Foot Truck' || '16 Foot Truck'
+      then fuel == "Up to 33 gallons and 12 mph!"
+    when '22 Foot Truck' || '26 Foot Truck'
+      then fuel == "Up to 50 gallons and 13 mph!"
+    end
+  puts "You should expect to use #{fuel}."
+end 
 
 
-  #def vehicle_info
-   #grab gas info and cargo size
-  #end
+ 
