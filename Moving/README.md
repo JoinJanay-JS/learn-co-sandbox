@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+TODO: Using bin/moving all the program to scrape the Penske and receive a recommended truck. 
 
 ## Development
 
