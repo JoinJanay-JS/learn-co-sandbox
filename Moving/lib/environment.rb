@@ -1,6 +1,7 @@
 require 'pry'
 require 'nokogiri'
 require 'open-uri'
+require 'httparty'
 
 require_relative "Moving/version"
 require_relative 'Moving/cli'
