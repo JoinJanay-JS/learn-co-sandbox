@@ -7,16 +7,10 @@ attr_accessor :parse_page
   end
 
   def self.moving
-    binding.pry
      trucks = self.scrape_the_page.css(".view-trucks.border-bottom-none")
-     names = trucks.css("tr")[0].attribute(".href")
-     binding.pry
-     #rooms = .css('.')
+     names = trucks.css("tr")[0]
+     rooms = trucks.css("tr")[1]
+     gas = trucks.css("tr").css(".shaded")[4]
   end 
-.
-end
 
-
-def get_truck
-  
 end
