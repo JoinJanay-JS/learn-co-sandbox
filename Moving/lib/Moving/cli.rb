@@ -9,11 +9,13 @@ class Moving::CLI
     #fuel_tank
   end 
 
-#def vehicle_selection()
+def vehicle_selection()
+    puts "How many rooms are you moving?"
+    
 
-# end
+end
    
  
 end
-  puts "How many rooms are you moving?"
+
   

@@ -1,6 +1,5 @@
-class Truck  
-  attr_accessor :name, :gas, :room 
-  
+class Room
+  attr_accessor :name, :truck
   @@all = []
   
    def initialize(name)
@@ -11,4 +10,4 @@ class Truck
   def self.all
   @@all
   end
-end  
+end 
