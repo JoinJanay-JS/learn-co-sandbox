@@ -19,20 +19,19 @@ attr_accessor :parse_page
      gas.shift(2)
      
      names.each do |n|
-       Truck.new(n.strip)   
+       Truck.new(n.strip)
       end
-      
+
       rooms.each_with_index do |r,index|
         room = Room.new(r.strip)
         truck = Truck.all[index]
         truck.room = room 
       end
+      
       gas.each_with_index do |g,index|
         gas = Gas.new(g.strip)
-        gas = Truck.all[index]
-        gas.room = gas
+        truck = Truck.all[index]
+        truck.gas = gas
       end 
-      binding.pry
-  end 
+  end
 end
-
