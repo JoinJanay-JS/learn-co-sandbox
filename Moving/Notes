@@ -15,3 +15,10 @@ contributor guide
 link to license code 
 
 
+
+1. Ask the user how many rooms they want?
+2. Show them choices of room with numbers so it looks like this 1. Up to 1 room etc.. 
+3. then the user picks a room based on the number they chose for this instance we shall use 1.
+4. you go through all the trucks and pull out the specific truck 
+5. display the truck name 
+6. ask the user if they want to know the gas mileage of this truck 
