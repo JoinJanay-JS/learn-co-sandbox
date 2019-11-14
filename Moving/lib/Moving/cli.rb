@@ -21,14 +21,14 @@ class Moving::CLI
     prompt = gets.chomp.to_i
 
     
-    @truck = Truck.all[prompt - 1]
+    @truck = Truck.all[prompt -1]
       puts "Wow. You should try #{truck.name}."
       
-      if prompt <= 0 
-          puts "Please check your entry and try again!"
-        else prompt > 5 
-        puts "You may want to try two trucks!"
-      end 
+    if prompt <= 0 
+         puts "Please check your entry and try again!"
+       else prompt > 5 
+       puts "You may want to try two trucks!"
+     end  
 end
   
   def fuel_tank()
