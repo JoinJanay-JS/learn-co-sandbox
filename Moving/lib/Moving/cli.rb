@@ -22,25 +22,28 @@ class Moving::CLI
 
     
     @truck = Truck.all[prompt -1]
+  
       puts "Wow. You should try #{truck.name}."
       
-    if prompt <= 0 
-         puts "Please check your entry and try again!"
-       else prompt > 5 
+      if prompt <= 0 
+       puts "Please check your entry and try again!"
+      if prompt > 5 
        puts "You may want to try two trucks!"
      end  
 end
   
   def fuel_tank()
-    user_input = gets.chomp.to_str 
-    @gas = Gas.all[user_input -1]
-     
-    puts "Would you like to know how much gas to use?" 
-    if user_input = 'yes'
-      puts "You will use #{gas.amount}."
-    if user_input = 'no' 
-      puts "Thank you for visiting!"
-    end 
+     puts "Would you like to know how much gas to use?" 
+    
+    user = gets.chomp 
+    @gas = Gas.all[user -1]
+   
+    case gas 
+    when user == 'Yes'
+      then puts "You will use #{gas.amount}."
+    when user == 'No' 
+    then  puts "Thank you for visiting!"
+    end  
   end 
 end
 end 
