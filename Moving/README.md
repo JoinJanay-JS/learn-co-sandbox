@@ -2,7 +2,7 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/Moving`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: This Gemfile will allow you to use the Penske truck chart and receive a recommendation on a vehicle based on the number of rooms you need to move. 
+ This Gemfile will allow you to use the Penske truck chart and receive a recommendation on a vehicle based on the number of rooms you need to move. 
 
 ## Installation
 
@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Using bin/moving all the program to scrape the Penske and receive a recommended truck. 
+ Using bin/moving all the program to scrape the Penske and receive a recommended truck. 
 
 ## Development
 
